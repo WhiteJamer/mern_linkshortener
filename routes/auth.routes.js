@@ -18,6 +18,8 @@ router.post(
   ],
   async (request, response) => {
     try {
+      console.log('Body', request.body)
+
       const errors = validationResult(request);
       if (!errors.isEmpty()) {
         return response.status(400).json({
@@ -27,8 +29,7 @@ router.post(
       }
 
       const { email, password } = request.body;
-
-      const userExists = User.findOne({ email: email });
+      const userExists = await User.findOne({ email });
 
       if (userExists) {
         return response
@@ -36,7 +37,7 @@ router.post(
           .json({ message: "Такой пользователь уже существует" });
       }
 
-      const hashedPassword = bcrypt.hash(password, 12);
+      const hashedPassword = await bcrypt.hash(password, 12);
 
       const user = new User({ email: email, password: hashedPassword });
       await user.save();
@@ -46,6 +47,7 @@ router.post(
       response
         .status(500)
         .json({ message: "Что-то пошло не так, попробуйте снова!" });
+      console.error(e)
     }
   }
 );
@@ -80,10 +82,10 @@ router.post(
       if (!passwordIsMatch) {
         return response.status(400).json({ message: "Неверный пароль" });
       }
-      const totken = jwt.sign({ userId: user.id }, config.get("jwtSecret"), {
+      const token = jwt.sign({ userId: user.id }, config.get("jwtSecret"), {
         expiresIn: "1h",
       });
-      response.status(200).json({token, userid: user.id})
+      response.status(200).json({token, userId: user.id})
     } catch (e) {
       response
         .status(500)

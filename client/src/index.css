@@ -1,0 +1,8 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+
+.btn-padding-1 button{
+  margin: 0 0.1rem;
+}
+.nav-wrapper{
+  padding: 0 0.5rem;
+}
