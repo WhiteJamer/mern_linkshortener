@@ -1,4 +1,5 @@
 {
+  "baseUrl": "http://localhost:5000",
   "port": 5000,
   "jwtSecret": "my absolutely secret key, yes,yes",
   "mongoUrl": "mongodb+srv://whitejamer:123@mongodbcluster-3siex.azure.mongodb.net/appdb?retryWrites=true&w=majority"
