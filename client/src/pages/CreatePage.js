@@ -2,6 +2,7 @@ import React, { Fragment, useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useToastMessage } from "../hooks/toastMessage.hook";
 import { useHttp } from "../hooks/http.hook";
+import { Loader } from "../components/Loader";
 
 export default function CreatePage() {
   const [shortLink, setShortLink] = useState(null);
@@ -9,7 +10,7 @@ export default function CreatePage() {
   const message = useToastMessage();
   const auth = useContext(AuthContext);
   const [link, setLink] = useState("");
-  const { request } = useHttp();
+  const { request, loading } = useHttp();
 
   const pressHandler = async (e) => {
     if (e.key === "Enter") {
@@ -56,6 +57,7 @@ export default function CreatePage() {
             Вставьте ссылку которую хотите сократить
           </label>
         </div>
+        {loading && <Loader/>}
         {shortLink && 
         <div className="row">
           <div className="input-field col s8 offset-s2">

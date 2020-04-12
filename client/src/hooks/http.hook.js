@@ -8,7 +8,7 @@ export const useHttp = () => {
     setLoading(true);
     try {
       if (body) {
-        body = JSON.stringify(body); // Преобразование в JSON
+        body = await JSON.stringify(body); // Преобразование в JSON
         headers["Content-Type"] = "application/json";
       }
       const response = await fetch(url, { method, body, headers });

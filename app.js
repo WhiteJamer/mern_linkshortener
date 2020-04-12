@@ -7,6 +7,8 @@ const PORT = config.get("port") || 5000;
 const app = express();
 
 app.use(express.json({extended: true})); // Для парсинга JSON
+
+app.use('/r', require('./routes/redirect.routes'));
 app.use("/api/links", require("./routes/links.routes"));
 app.use("/api/auth", require("./routes/auth.routes"));
 

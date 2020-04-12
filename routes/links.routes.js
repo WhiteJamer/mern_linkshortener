@@ -19,7 +19,7 @@ router.post("/generate", auth, async (req, res) => {
       });
     }
     
-    const to = baseUrl + "/t/" + code;
+    const to = baseUrl + "/r/" + code;
 
     const link = new Link({
       from,
