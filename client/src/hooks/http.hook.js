@@ -21,7 +21,7 @@ export const useHttp = () => {
           auth.logout();
         }
 
-        if (!response.ok) {
+        else if (!response.ok) {
           setLoading(false);
           throw new Error(data.message || "Что-то пошло не так");
         }

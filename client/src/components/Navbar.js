@@ -23,9 +23,6 @@ export const Navbar = () => {
               <NavLink to="/create">Создать</NavLink>
             </li>
             <li>
-              <NavLink to="/links/44">Детально</NavLink>
-            </li>
-            <li>
               <a onClick={logoutHandler} href="/">
                 <strong>Выйти</strong>
               </a>
