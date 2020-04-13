@@ -11,6 +11,9 @@ module.exports = (req, res, next) => {
       return res.status(401).json({ message: "Пользователь не авторизован" });
     }
     const decoded = jwt.verify(token, config.get('jwtSecret'))
+    if(!decoded){
+      return res.status(401).json({message: 'Ваш токен истек, авторизуйтесь снова!'})
+    }
     req.user = decoded
     next()
   } catch (e) {

@@ -29,7 +29,7 @@ export default function CreatePage() {
 
       } catch (e) {
         console.log(e.message)
-        console.log('Что-то не так')
+        message(e.message);
       }
     }
   };
