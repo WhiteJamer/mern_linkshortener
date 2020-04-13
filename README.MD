@@ -18,11 +18,10 @@
 ## Использование
 Склонируйте проект в нужную папку 
 
-`
-git clone <repository>
-`
+```
+git clone https://github.com/WhiteJamer/mern_linkshortener.git
+```
 
-Склонируйте проект в нужную папку 
 
 #### Для запуска в режиме разработки в проекта введите:
 
