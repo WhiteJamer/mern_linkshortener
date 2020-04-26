@@ -1,8 +1,16 @@
 # Сократитель ссылок MERN
 
-<a href="https://ibb.co/rQRpY8h"><img src="https://i.ibb.co/rQRpY8h/1.jpg" alt="1" border="0" /></a>
-<a href="https://ibb.co/2jYwM7S"><img src="https://i.ibb.co/2jYwM7S/2.jpg" alt="2" border="0" /></a>
-<a href="https://ibb.co/grbsF7J"><img src="https://i.ibb.co/grbsF7J/3.jpg" alt="3" border="0" /></a>
+## Скриншоты
+
+
+<p style="text-align: center;">Страница для сокращения ссылок:</p>
+<a href="https://ibb.co/rQRpY8h"><img src="https://i.ibb.co/2F1MxVr/1.jpg" alt="1" border="0"></a>
+
+<p style="text-align: right;">Страница просмотра ссылок закрепленных за пользователем:</p>
+<a href="https://ibb.co/2jYwM7S"><img src="https://i.ibb.co/rZfgpG3/2.jpg" alt="2" border="0"></a>
+
+<p style="text-align: center;">Страница для вторизации и регистрации:</div>
+<a href="https://ibb.co/grbsF7J"><img src="https://i.ibb.co/BfH8KPB/3.jpg" alt="3" border="0"></a>
 
 ## Технологии:
 - Javascript(React)
