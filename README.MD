@@ -1,8 +1,8 @@
 # Сократитель ссылок MERN
 
-![linkshortener](https://ibb.co/rQRpY8h)
-![linkshortener](https://ibb.co/2jYwM7S)
-![linkshortener](https://ibb.co/grbsF7J)
+<a href="https://ibb.co/rQRpY8h"><img src="https://i.ibb.co/rQRpY8h/1.jpg" alt="1" border="0" /></a>
+<a href="https://ibb.co/2jYwM7S"><img src="https://i.ibb.co/2jYwM7S/2.jpg" alt="2" border="0" /></a>
+<a href="https://ibb.co/grbsF7J"><img src="https://i.ibb.co/grbsF7J/3.jpg" alt="3" border="0" /></a>
 
 ## Технологии:
 - Javascript(React)
